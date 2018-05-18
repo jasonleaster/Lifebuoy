@@ -1,2 +1,59 @@
 # Lifebuoy
-菜鸟生存指南  (帮助初入职场的同学完成技术工具能力积累)
+菜鸟生存指南  (引到初入职场的同学了解常用的技术工具和工作方式)
+
+以下内容如果能在大学期间掌握更好，否则你的起步会比别人慢一些，而且看起来是在让人无法接受。但是如果你的公司接受你了，那么希望下面的一些小建议能帮助到你。
+
+
+### 救生员第一定律
+用英文简洁的表述你的问题，然后Google
+### 救生员第二定律
+对流传的解决方案保持怀疑，不可轻信，考虑方案存在的潜在问题
+### 成为Nice的同事
+* [学会问正确的问题](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way)
+* 做技术终究要结合业务逻辑，技术服务于业务的，深入研究熟悉技术，提升开发效率和能力也是为了更好的服务于业务，也不能一味的抛弃技术思考，这样会设计方案的可行性终究要考虑在有限的时间内技术实现难度。
+* 一个项目不只有代码，不仅仅有程序实现人员，还有市场支撑、产品设计等等其他项目成员
+
+## Git 代码版本工具的使用
+知道为什么需要版本控制？了解并体会Git工具是通过哪些基础的操作实现版本控制的需求，这样会让你更深刻的理解Git等版本控制工具
+* [Git 实验室](https://learngitbranching.js.org/)
+* [猴子都能懂的Git](https://backlog.com/git-tutorial/cn/)
+* [Git 官方文档](https://git-scm.com/book/zh/v2)
+
+推荐: 创建一个实验性的Git项目，通过命令行完成并体会基础的版本控制操作。
+进阶: 了解Git的hooks机制，并尝试编写脚本，实现自定义版本控制工作流，做一些hack style的事情
+
+## 开发工具
+Java开发: Intellij IDEA 社区版.  不能像企业版一样自动发布到Tomcat，但是自己用Maven打个war包，部署至Tomcat的webapp目录，手动启动Tomcat也一样。社区版用的是ApacheLicense，不会担心由于版权问题公司层面禁止使用的问题。
+
+C语言开发: Vim + gcc + gdb
+
+Redis Desktop Manager
+MySQLWorkbench
+
+## 包管理工具
+软件可复用的重要形式之一就是直接使用(引用)别人编写的代码，而如果认为手动的管理公开的软件包会带来很多问题，因此衍生出“集中式”包管理工具。如下:
+* Maven  [maven-in-five-minute](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html) 认真冷静的读完这个Guider。
+
+我初次接触Maven是在2015年，记得当时非常不理解为什么要有这个东西，pom.xml （Project Object Model）文件有什么用？为什么不用JSON文件，xml很难看。Don't Panic ! 他就是个配置说明文件，一个星期，半个月你就熟悉了，如果连Java都没写过，可能需要更久，但是这是客观规律，急也没有用。
+
+* npm (Node Package Manager)
+ 前端开发越来越工程化的时候就衍生出越来越多辅助工具了，npm也是这个过程中的产物。
+* pip
+
+## 熟悉Linux下的开发和维护方法
+
+除了常用的cd、ls命令之外，还要了解 top、grep、ps、kill等常用的命令使用方法, 了解通过proc系统获取进程或系统相关信息。
+
+如果`Linux鸟哥的私房菜`都没有读过几遍的建议抽时间多读读。并且了解Linux系统的架构。
+
+## 开发编码建议
+* 机器的资源始终是有限的, 关于程序需要消耗的资源使用要有预估，否则低级的性能问题由此而生
+* 团队引入`CheckStyle`、`FindBugs`、`JSLint`等静态检查工具
+* 阿里巴巴Java编程规范
+
+## 前端开发
+* [最棒的CSS选择器实践](https://flukeout.github.io/)
+* [CSS 布局](http://zh.learnlayout.com/)
+* [’单线程‘的JS如果处理多个任务 -- JavaScript 事件循环](https://vimeo.com/96425312)
+
+TODO 未完待续 : )
