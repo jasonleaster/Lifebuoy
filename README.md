@@ -27,8 +27,8 @@ Java开发: Intellij IDEA 社区版.  不能像企业版一样自动发布到Tom
 
 C语言开发: Vim + gcc + gdb
 
-Redis Desktop Manager
-MySQLWorkbench
+Redis Desktop Manager 
+MySQLWorkbench 
 
 ## 包管理工具
 软件可复用的重要形式之一就是直接使用(引用)别人编写的代码，而如果认为手动的管理公开的软件包会带来很多问题，因此衍生出“集中式”包管理工具。如下:
@@ -42,7 +42,23 @@ MySQLWorkbench
 
 ## 熟悉Linux下的开发和维护方法
 
-除了常用的cd、ls命令之外，还要了解 top、grep、ps、kill等常用的命令使用方法, 了解通过proc系统获取进程或系统相关信息。
+除了常用的cd、ls、cat命令之外，还要了解包括但不限于以下工具或命令:
+* top 根据CPU消耗、内存占用率对进程进行排序
+* grep
+* ps
+* kill 强制杀死进程之前考虑杀死进程会带来什么后果，切记。例如，锁、连接等是否能正确释放，如果不能请考虑正确结束程序的方式。
+* scp
+* tmux 了解简单常用的分屏操作
+* ssh
+* netstat
+* tcpdump
+* ipcs
+* ipcrm
+* vim
+* gcc
+* make
+
+通过cat了解通过proc系统获取进程或系统相关信息。
 
 如果`Linux鸟哥的私房菜`都没有读过几遍的建议抽时间多读读。并且了解Linux系统的架构。
 
@@ -54,6 +70,6 @@ MySQLWorkbench
 ## 前端开发
 * [最棒的CSS选择器实践](https://flukeout.github.io/)
 * [CSS 布局](http://zh.learnlayout.com/)
-* [’单线程‘的JS如果处理多个任务 -- JavaScript 事件循环](https://vimeo.com/96425312)
+* [`单线程`的JS如果处理多个任务 -- JavaScript 事件循环](https://vimeo.com/96425312)
 
 TODO 未完待续 : )
