@@ -27,14 +27,17 @@ Java开发: Intellij IDEA 社区版.  不能像企业版一样自动发布到Tom
 
 C语言开发: Vim + gcc + gdb
 
-Redis Desktop Manager 
-MySQLWorkbench 
+Redis Desktop Manager Redis管理客户端
+MySQLWorkbench MySQL数据库管理客户端
+Wireshark 网络抓包分析利器
 
 ## 包管理工具
 软件可复用的重要形式之一就是直接使用(引用)别人编写的代码，而如果认为手动的管理公开的软件包会带来很多问题，因此衍生出“集中式”包管理工具。如下:
 * Maven  [maven-in-five-minute](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html) 认真冷静的读完这个Guider。
 
 我初次接触Maven是在2015年，记得当时非常不理解为什么要有这个东西，pom.xml （Project Object Model）文件有什么用？为什么不用JSON文件，xml很难看。Don't Panic ! 他就是个配置说明文件，一个星期，半个月你就熟悉了，如果连Java都没写过，可能需要更久，但是这是客观规律，急也没有用。
+
+* Gradle 与Maven类似的包管理工具(了解即可)。
 
 * npm (Node Package Manager)
  前端开发越来越工程化的时候就衍生出越来越多辅助工具了，npm也是这个过程中的产物。
@@ -43,20 +46,18 @@ MySQLWorkbench
 ## 熟悉Linux下的开发和维护方法
 
 除了常用的cd、ls、cat命令之外，还要了解包括但不限于以下工具或命令:
+
 * top 根据CPU消耗、内存占用率对进程进行排序
 * grep
 * ps
 * kill 强制杀死进程之前考虑杀死进程会带来什么后果，切记。例如，锁、连接等是否能正确释放，如果不能请考虑正确结束程序的方式。
-* scp
+* scp Linux机器之间通过网络传输文件拷贝
 * tmux 了解简单常用的分屏操作
-* ssh
-* netstat
-* tcpdump
+* ssh 登录远端的机器
+* netstat 本地网络端口使用统计情况
+* tcpdump tcp抓包分析
 * ipcs
 * ipcrm
-* vim
-* gcc
-* make
 
 通过cat了解通过proc系统获取进程或系统相关信息。
 
