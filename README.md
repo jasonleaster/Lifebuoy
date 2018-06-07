@@ -68,6 +68,14 @@ Wireshark 网络抓包分析利器
 * 团队引入`CheckStyle`、`FindBugs`、`JSLint`等静态检查工具
 * 阿里巴巴Java编程规范
 
+> 敲每个点号时，考虑：
+会不会出现空指针?
+有没有异常抛出？
+是不是在热点区域？
+在哪个线程执行？
+有没有并发锁间隙？
+会不会并发修改不可见？
+
 ## 前端开发
 * [最棒的CSS选择器实践](https://flukeout.github.io/)
 * [CSS 布局](http://zh.learnlayout.com/)
