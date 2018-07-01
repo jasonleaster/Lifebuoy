@@ -1,7 +1,7 @@
 # Lifebuoy
 菜鸟生存指南  (引到初入职场的同学了解常用的技术工具和工作方式)
 
-以下内容如果能在大学期间掌握更好，否则你的起步会比别人慢一些，而且看起来是在让人无法接受。但是如果你的公司接受你了，那么希望下面的一些小建议能帮助到你。
+以下内容如果能在大学期间掌握更好，希望下面的一些小建议能帮助到你。
 
 
 ### 救生员第一定律
@@ -19,17 +19,21 @@
 * [猴子都能懂的Git](https://backlog.com/git-tutorial/cn/)
 * [Git 官方文档](https://git-scm.com/book/zh/v2)
 
-推荐: 创建一个实验性的Git项目，通过命令行完成并体会基础的版本控制操作。
-进阶: 了解Git的hooks机制，并尝试编写脚本，实现自定义版本控制工作流，做一些hack style的事情
+常见毒瘤:
+1. 请不要将IDE相关配置文件提交，任何文件一旦加入到git版本控制跟踪后，再去.gitignore添加该文件，祈求忽略该文件是无效的。一旦加入，无法忽略，除非你删除该文件。
+2. 请不要随意修改包名或者删除文件，极易导致代码覆盖。
+
+推荐: 创建一个实验性的Git项目，通过命令行完成并体会基础的版本控制操作。  
+进阶: 了解Git的hooks机制，并尝试编写脚本，实现自定义版本控制工作流，做一些hack style的事情  
 
 ## 开发工具
 Java开发: Intellij IDEA 社区版.  不能像企业版一样自动发布到Tomcat，但是自己用Maven打个war包，部署至Tomcat的webapp目录，手动启动Tomcat也一样。社区版用的是ApacheLicense，不会担心由于版权问题公司层面禁止使用的问题。
 
-C语言开发: Vim + gcc + gdb
+C语言开发: Vim + gcc + gdb 
 
-Redis Desktop Manager Redis管理客户端
-MySQLWorkbench MySQL数据库管理客户端
-Wireshark 网络抓包分析利器
+Redis Desktop Manager Redis管理客户端 
+MySQLWorkbench MySQL数据库管理客户端 
+Wireshark 网络抓包分析利器 
 
 ## 包管理工具
 软件可复用的重要形式之一就是直接使用(引用)别人编写的代码，而如果认为手动的管理公开的软件包会带来很多问题，因此衍生出“集中式”包管理工具。如下:
@@ -66,7 +70,7 @@ Wireshark 网络抓包分析利器
 ## 开发编码建议
 * 机器的资源始终是有限的, 关于程序需要消耗的资源使用要有预估，否则低级的性能问题由此而生 
 * 团队引入`CheckStyle`、`FindBugs`、`JSLint`、[Sonar](https://www.sonarsource.com/plans-and-pricing/community/)等静态检查工具 
-* **反复阅读并掌握**阿里巴巴Java编程规范 
+* **反复阅读并掌握**阿里巴巴Java编程规范, 任何违反该规范的开发人员都是trouble maker。 
 
 > 敲每个点号时，考虑：  
 会不会出现空指针?  
@@ -83,4 +87,4 @@ Wireshark 网络抓包分析利器
 * [CSS 布局](http://zh.learnlayout.com/)
 * [`单线程`的JS如果处理多个任务 -- JavaScript 事件循环](https://vimeo.com/96425312)
 
-TODO 未完待续 : )
+TODO 未完待续 : ) 2018.07.01 updated
