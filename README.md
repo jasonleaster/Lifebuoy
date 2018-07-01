@@ -64,19 +64,21 @@ Wireshark 网络抓包分析利器
 如果`Linux鸟哥的私房菜`都没有读过几遍的建议抽时间多读读。并且了解Linux系统的架构。
 
 ## 开发编码建议
-* 机器的资源始终是有限的, 关于程序需要消耗的资源使用要有预估，否则低级的性能问题由此而生
-* 团队引入`CheckStyle`、`FindBugs`、`JSLint`等静态检查工具
-* 阿里巴巴Java编程规范
+* 机器的资源始终是有限的, 关于程序需要消耗的资源使用要有预估，否则低级的性能问题由此而生 
+* 团队引入`CheckStyle`、`FindBugs`、`JSLint`、[Sonar](https://www.sonarsource.com/plans-and-pricing/community/)等静态检查工具 
+* **反复阅读并掌握**阿里巴巴Java编程规范 
 
-> 敲每个点号时，考虑：
-会不会出现空指针? 
-有没有异常抛出? 
+> 敲每个点号时，考虑：  
+会不会出现空指针?  
+有没有异常抛出?  
 是不是在热点区域? 
 在哪个线程执行?  
 有没有并发锁间隙?  
 会不会并发修改不可见? 
 
 ## 前端开发
+* [JS 秘密花园](http://bonsaiden.github.io/JavaScript-Garden/zh/#object.forinloop)
+* [JS6 入门](http://es6.ruanyifeng.com/?search=import&x=0&y=0)
 * [最棒的CSS选择器实践](https://flukeout.github.io/)
 * [CSS 布局](http://zh.learnlayout.com/)
 * [`单线程`的JS如果处理多个任务 -- JavaScript 事件循环](https://vimeo.com/96425312)
