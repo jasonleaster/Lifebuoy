@@ -70,7 +70,7 @@ Wireshark 网络抓包分析利器
 ## 开发编码建议
 * 机器的资源始终是有限的, 关于程序需要消耗的资源使用要有预估，否则低级的性能问题由此而生 
 * 团队引入`CheckStyle`、`FindBugs`、`JSLint`、[Sonar](https://www.sonarsource.com/plans-and-pricing/community/)等静态检查工具 
-* **反复阅读并掌握**阿里巴巴Java编程规范, 任何违反该规范的开发人员都是trouble maker。 
+* **反复阅读并掌握** 《阿里巴巴Java编程规范》, 任何违反该规范的开发人员都是trouble maker。 
 
 > 敲每个点号时，考虑：  
 会不会出现空指针?  
