@@ -84,6 +84,8 @@ Wireshark 网络抓包分析利器
 分页查询是个常用的功能，对于MySQL需要join很多表的情况，首先尝试优化SQL，并创建相应的索引
 如果实在还是不行，那就去将原来A、B、C、D、E、F等多个表join的情况先做”小范围的分页，再去join“，比方说分页的关键在于A B两个表，我们可以先将ABjoin的结果分页，再去做剩下表的join，”过滤核心数据，再做数据查询，减少数据查询的规模“
 
+分页查询时先用子查询把数据规模最大的那张表的主键查出来，然后再和其他从表join. 参考Java开发规范，索引规约，第七条
+
 * Tomcat 
 Tomcat 进阶 https://www.ntu.edu.sg/home/ehchua/programming/howto/Tomcat_More.html 
 
