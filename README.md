@@ -68,9 +68,8 @@ Wireshark 网络抓包分析利器
 如果`Linux鸟哥的私房菜`都没有读过几遍的建议抽时间多读读。并且了解Linux系统的架构。
 
 ## 开发编码建议
-* 机器的资源始终是有限的, 关于程序需要消耗的资源使用要有预估，否则低级的性能问题由此而生 
-* 团队引入`CheckStyle`、`FindBugs`、`JSLint`、[Sonar](https://www.sonarsource.com/plans-and-pricing/community/)等静态检查工具 
-* **反复阅读并掌握** 《阿里巴巴Java编程规范》, 任何违反该规范的开发人员都是trouble maker。 
+
+梁飞说过一段话我一直觉得非常棒，在此推荐
 
 > 敲每个点号时，考虑：  
 会不会出现空指针?  
@@ -81,11 +80,21 @@ Wireshark 网络抓包分析利器
 会不会并发修改不可见?  
 `-- 梁飞`
 
+* 机器的资源始终是有限的, 关于程序需要消耗的资源使用要有预估，否则低级的性能问题由此而生 
+* 团队引入`CheckStyle`、`FindBugs`、`JSLint`、[Sonar](https://www.sonarsource.com/plans-and-pricing/community/)等静态检查工具 
+* **反复阅读并掌握** 《阿里巴巴Java编程规范》, 任何违反该规范的开发人员都是trouble maker。 
+
+* 了解如何通过tcp端口远程调试java服务
+ -Xdebug -Xrunjdwp:transport=dt_socket,suspend=n,server=y,address=8889
+
+* -Xmx 参数指明jvm运行时动态申请的最大堆内存，合理的规划部署机器确保对应的java进程能够用到足够的内存资源，Xmx仅是声明式的参数，而非抢占式的。
+
 * 数据库分页查询Tips
-分页查询是个常用的功能，对于MySQL需要join很多表的情况，首先尝试优化SQL，并创建相应的索引
-如果实在还是不行，那就去将原来A、B、C、D、E、F等多个表join的情况先做”小范围的分页，再去join“，比方说分页的关键在于A B两个表，我们可以先将ABjoin的结果分页，再去做剩下表的join，”过滤核心数据，再做数据查询，减少数据查询的规模“
+分页查询是个常用的功能，对于MySQL需要join很多表的情况，首先尝试优化SQL，并创建相应的索引如果实在还是不行，那就去将原来A、B、C、D、E、F等多个表join的情况先做”小范围的分页，再去join“，比方说分页的关键在于A B两个表，我们可以先将ABjoin的结果分页，再去做剩下表的join，”过滤核心数据，再做数据查询，减少数据查询的规模“。
 
 分页查询时先用子查询把数据规模最大的那张表的主键查出来，然后再和其他从表join. 参考Java开发规范，索引规约，第七条
+
+我做过MySQL数据库单表700w+规模数据的分压查询方案设计和实现，记录的总条数有时候是没有必要的，用户有时候不比执着于最后一页，分页查询的本质就是从海量数据中取少量数据做视察，参考业界搜索引擎的查询结果展示一般只会展示10页，把相关性强的有限展示出来。
 
 * Tomcat 
 Tomcat 进阶 https://www.ntu.edu.sg/home/ehchua/programming/howto/Tomcat_More.html 
@@ -110,3 +119,5 @@ https://developers.google.com/web/tools/chrome-devtools/)
 > It is always a good practice first to make your code right, and then make it fast. Even then, pursue optimization only if your performance measurements and requirements tell you that you must, and if those same measurements tell you that your optimizations actually made a difference under realistic conditions.
 
 TODO 未完待续 : ) 2018.07.17 updated
+
+![images](/src/images/img_0179.jpg)
