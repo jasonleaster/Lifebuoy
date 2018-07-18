@@ -124,6 +124,6 @@ https://developers.google.com/web/tools/chrome-devtools/)
 
 > It is always a good practice first to make your code right, and then make it fast. Even then, pursue optimization only if your performance measurements and requirements tell you that you must, and if those same measurements tell you that your optimizations actually made a difference under realistic conditions.
 
-TODO 未完待续 : ) 2018.07.17 updated
-
 ![images](/src/images/img_0179.jpg)
+
+TODO 未完待续 : ) 2018.07.18 updated
