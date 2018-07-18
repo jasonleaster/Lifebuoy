@@ -89,12 +89,18 @@ Wireshark 网络抓包分析利器
 
 * -Xmx 参数指明jvm运行时动态申请的最大堆内存，合理的规划部署机器确保对应的java进程能够用到足够的内存资源，Xmx仅是声明式的参数，而非抢占式的。
 
+* [内存泄露的例子了解一下](https://gist.github.com/djangofan/2713839)
+
 * 数据库分页查询Tips
-分页查询是个常用的功能，对于MySQL需要join很多表的情况，首先尝试优化SQL，并创建相应的索引如果实在还是不行，那就去将原来A、B、C、D、E、F等多个表join的情况先做”小范围的分页，再去join“，比方说分页的关键在于A B两个表，我们可以先将ABjoin的结果分页，再去做剩下表的join，”过滤核心数据，再做数据查询，减少数据查询的规模“。
-
-分页查询时先用子查询把数据规模最大的那张表的主键查出来，然后再和其他从表join. 参考Java开发规范，索引规约，第七条
-
+分页查询是个常用的功能，对于MySQL需要join很多表的情况，首先尝试优化SQL，并创建相应的索引如果实在还是不行，那就去将原来A、B、C、D、E、F等多个表join的情况先做”小范围的分页，再去join“，比方说分页的关键在于A B两个表，我们可以先将ABjoin的结果分页，再去做剩下表的join，”过滤核心数据，再做数据查询，减少数据查询的规模“。  
+分页查询时先用子查询把数据规模最大的那张表的主键查出来，然后再和其他从表join. 参考Java开发规范，索引规约，第七条  
 我做过MySQL数据库单表700w+规模数据的分压查询方案设计和实现，记录的总条数有时候是没有必要的，用户有时候不比执着于最后一页，分页查询的本质就是从海量数据中取少量数据做视察，参考业界搜索引擎的查询结果展示一般只会展示10页，把相关性强的有限展示出来。
+
+* Mapper开发规则
+在mapper.xml中将namespace设置为mapper.Java的全限定名  
+将mapper.java接口的方法名和mapper.xml中statement的id保持一致  
+将mapper.java接口的方法输入参数类型和mapper.xml中statement的parameterType保持一致  
+将mapper.java接口的方法输出 结果类型和mapper.xml中statement的resultType保持一致  
 
 * Tomcat 
 Tomcat 进阶 https://www.ntu.edu.sg/home/ehchua/programming/howto/Tomcat_More.html 
