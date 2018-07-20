@@ -97,6 +97,7 @@ Wireshark 网络抓包分析利器
 我做过MySQL数据库单表700w+规模数据的分压查询方案设计和实现，记录的总条数有时候是没有必要的，用户有时候不比执着于最后一页，分页查询的本质就是从海量数据中取少量数据做视察，参考业界搜索引擎的查询结果展示一般只会展示10页，把相关性强的有限展示出来。
 
 * Mapper开发规则
+让MyBatis-Spring完成自动扫包，而不要去MyBatis的Configuration中自己去配置添加Mapper  
 在mapper.xml中将namespace设置为mapper.Java的全限定名  
 将mapper.java接口的方法名和mapper.xml中statement的id保持一致  
 将mapper.java接口的方法输入参数类型和mapper.xml中statement的parameterType保持一致  
