@@ -114,6 +114,7 @@ Tomcat 进阶 https://www.ntu.edu.sg/home/ehchua/programming/howto/Tomcat_More.h
 * [`单线程`的JS如果处理多个任务 -- JavaScript 事件循环](https://vimeo.com/96425312)
 * [chrome 浏览器开发说明文档才是最好的学习指南](
 https://developers.google.com/web/tools/chrome-devtools/)
+* [JS 的 new 到底是干什么的?](https://zhuanlan.zhihu.com/p/23987456?refer=study-fe)
 
 ## 管理好你的工作站
 
