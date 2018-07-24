@@ -87,7 +87,12 @@ Wireshark 网络抓包分析利器
 * 了解如何通过tcp端口远程调试java服务
  -Xdebug -Xrunjdwp:transport=dt_socket,suspend=n,server=y,address=8889
 
-* -Xmx 参数指明jvm运行时动态申请的最大堆内存，合理的规划部署机器确保对应的java进程能够用到足够的内存资源，Xmx仅是声明式的参数，而非抢占式的。
+* [了解常见的HTTP响应状态码快速定位问题](https://zh.wikipedia.org/wiki/HTTP%E7%8A%B6%E6%80%81%E7%A0%81)
+
+* -Xmx 参数指明jvm运行时动态申请的最大堆内存，合理的规划部署机器确保对应的java进程能够用到足够的内存资源，Xmx仅是声明式的参数，而非抢占式的。  
+gc日志永远都是我们排查gc问题最好的工具，所以强烈建议大家在线上配置-XX:+PrintGCDetails -Xloggc:/data/logs/gc.log
+
+* [JAVA 常见问题排查方法](https://github.com/fujohnwang/wonderful-slides/blob/master/Java%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5%5B%E6%AF%95%E7%8E%84%5D1397440786.pdf)
 
 * [内存泄露的例子了解一下](https://gist.github.com/djangofan/2713839)
 
@@ -96,7 +101,7 @@ Wireshark 网络抓包分析利器
 分页查询时先用子查询把数据规模最大的那张表的主键查出来，然后再和其他从表join. 参考Java开发规范，索引规约，第七条  
 我做过MySQL数据库单表700w+规模数据的分压查询方案设计和实现，记录的总条数有时候是没有必要的，用户有时候不比执着于最后一页，分页查询的本质就是从海量数据中取少量数据做视察，参考业界搜索引擎的查询结果展示一般只会展示10页，把相关性强的有限展示出来。
 
-* Mapper开发规则
+* Mapper开发规则  
 让MyBatis-Spring完成自动扫包，而不要去MyBatis的Configuration中自己去配置添加Mapper  
 在mapper.xml中将namespace设置为mapper.Java的全限定名  
 将mapper.java接口的方法名和mapper.xml中statement的id保持一致  
