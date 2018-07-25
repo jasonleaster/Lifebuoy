@@ -120,6 +120,7 @@ Tomcat 进阶 https://www.ntu.edu.sg/home/ehchua/programming/howto/Tomcat_More.h
 * [chrome 浏览器开发说明文档才是最好的学习指南](
 https://developers.google.com/web/tools/chrome-devtools/)
 * [JS 的 new 到底是干什么的?](https://zhuanlan.zhihu.com/p/23987456?refer=study-fe)
+* [跨域问题分析](https://amyfoxfn.github.io/amy-blog/)
 
 ## 管理好你的工作站
 
