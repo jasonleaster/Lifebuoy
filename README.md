@@ -1,4 +1,4 @@
-# Lifebuoy
+# Lifebuoy 
 菜鸟生存指南  (引到初入职场的同学了解常用的技术工具和工作方式)
 
 以下内容如果能在大学期间掌握更好，希望下面的一些小建议能帮助到你。
@@ -24,10 +24,11 @@
 2. 请不要随意修改包名或者删除文件，极易导致代码覆盖。
 
 推荐: 创建一个实验性的Git项目，通过命令行完成并体会基础的版本控制操作。  
-进阶: 了解Git的hooks机制，并尝试编写脚本，实现自定义版本控制工作流，做一些hack style的事情  
+进阶: 了解Git的hooks机制，并尝试编写脚本，实现自定义版本控制工作流，做一些hack style的事情。同时建议深入了解[git对象原理](https://blog.csdn.net/i_enum/article/details/50557367)。  
+
 
 ## 开发工具
-Java开发: Intellij IDEA 社区版.  不能像企业版一样自动发布到Tomcat，但是自己用Maven打个war包，部署至Tomcat的webapp目录，手动启动Tomcat也一样。社区版用的是ApacheLicense，不会担心由于版权问题公司层面禁止使用的问题。
+Java开发: Intellij IDEA 社区版.  不能像企业版一样自动发布到Tomcat，但是自己用Maven打个war包，部署至Tomcat的webapp目录，手动启动Tomcat也一样。社区版用的是ApacheLicense，不会担心由于版权问题公司层面禁止使用的问题。[Stack Overflow 关于Intellij Idea社区版用于商业公司开发的讨论](https://stackoverflow.com/questions/21967174/intellij-community-edition-for-work-in-company).
 
 C语言开发: Vim + gcc + gdb 
 
@@ -121,6 +122,7 @@ Tomcat 进阶 https://www.ntu.edu.sg/home/ehchua/programming/howto/Tomcat_More.h
 https://developers.google.com/web/tools/chrome-devtools/)
 * [JS 的 new 到底是干什么的?](https://zhuanlan.zhihu.com/p/23987456?refer=study-fe)
 * [跨域问题分析](https://amyfoxfn.github.io/amy-blog/)
+* [fouber 的博客](https://github.com/fouber/blog)
 
 ## 管理好你的工作站
 
