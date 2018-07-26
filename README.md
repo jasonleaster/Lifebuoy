@@ -31,9 +31,9 @@ Java开发: Intellij IDEA 社区版.  不能像企业版一样自动发布到Tom
 
 C语言开发: Vim + gcc + gdb 
 
-Redis Desktop Manager Redis管理客户端 
-MySQLWorkbench MySQL数据库管理客户端 
-Wireshark 网络抓包分析利器 
+Redis Desktop Manager Redis管理客户端  
+MySQLWorkbench MySQL数据库管理客户端  
+Wireshark 网络抓包分析利器  
 
 ## 包管理工具
 软件可复用的重要形式之一就是直接使用(引用)别人编写的代码，而如果认为手动的管理公开的软件包会带来很多问题，因此衍生出“集中式”包管理工具。如下:
@@ -131,6 +131,8 @@ https://developers.google.com/web/tools/chrome-devtools/)
 ### 关于程序性能与开发效率的平衡
 
 > It is always a good practice first to make your code right, and then make it fast. Even then, pursue optimization only if your performance measurements and requirements tell you that you must, and if those same measurements tell you that your optimizations actually made a difference under realistic conditions.
+
+----
 
 ![images](/src/images/img_0179.jpg)
 
