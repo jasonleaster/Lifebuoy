@@ -15,8 +15,6 @@
 
 ## Git 代码版本工具的使用
 
-![images](https://www.google.co.jp/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwiDu7Pakr3cAhXLu1MKHeuyAH8QjRx6BAgBEAU&url=https%3A%2F%2Fwww.atlassian.com%2Fgit%2Ftutorials%2Fusing-branches&psig=AOvVaw0GNwc7T5-pQoY14H-7QwOZ&ust=1532707545151627)
-
 知道为什么需要版本控制？了解并体会Git工具是通过哪些基础的操作实现版本控制的需求，这样会让你更深刻的理解Git等版本控制工具
 * [Git 实验室](https://learngitbranching.js.org/)
 * [猴子都能懂的Git](https://backlog.com/git-tutorial/cn/)
