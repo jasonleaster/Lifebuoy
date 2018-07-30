@@ -113,7 +113,11 @@ gc日志永远都是我们排查gc问题最好的工具，所以强烈建议大�
 将mapper.java接口的方法输出 结果类型和mapper.xml中statement的resultType保持一致  
 
 * Tomcat 
-Tomcat 进阶 https://www.ntu.edu.sg/home/ehchua/programming/howto/Tomcat_More.html 
+Tomcat 进阶 https://www.ntu.edu.sg/home/ehchua/programming/howto/Tomcat_More.html
+
+## MySQL 数据库相关
+
+* [MySQL各种不同语句执行落锁的情况](https://dev.mysql.com/doc/refman/5.7/en/innodb-locks-set.html)
 
 ## 前端开发
 * [JS 秘密花园](http://bonsaiden.github.io/JavaScript-Garden/zh/#object.forinloop)
