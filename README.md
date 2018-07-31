@@ -119,6 +119,10 @@ Tomcat 进阶 https://www.ntu.edu.sg/home/ehchua/programming/howto/Tomcat_More.h
 
 * [MySQL各种不同语句执行落锁的情况](https://dev.mysql.com/doc/refman/5.7/en/innodb-locks-set.html)
 
+* [自增长情况的处理说明](https://dev.mysql.com/doc/refman/5.7/en/innodb-auto-increment-handling.html)
+
+* [explain的使用说明](https://www.slideshare.net/phpcodemonkey/mysql-explain-explained)
+
 ## 前端开发
 * [JS 秘密花园](http://bonsaiden.github.io/JavaScript-Garden/zh/#object.forinloop)
 * [JS6 入门](http://es6.ruanyifeng.com/?search=import&x=0&y=0)
