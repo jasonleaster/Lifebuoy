@@ -123,6 +123,12 @@ Tomcat 进阶 https://www.ntu.edu.sg/home/ehchua/programming/howto/Tomcat_More.h
 
 * [explain的使用说明](https://www.slideshare.net/phpcodemonkey/mysql-explain-explained)
 
+* [如何设计一个MySQL的索引, 这是我见过最好的文档，没有之一](https://www.slideshare.net/billkarwin/how-to-design-indexes-really)
+
+* [实际工作中如何理解、运用数据库范式](http://kimi.it/418.html)
+
+* [关于 mysql int（X）中X的理解](http://kimi.it/175.html)
+
 ## 前端开发
 * [JS 秘密花园](http://bonsaiden.github.io/JavaScript-Garden/zh/#object.forinloop)
 * [JS6 入门](http://es6.ruanyifeng.com/?search=import&x=0&y=0)
