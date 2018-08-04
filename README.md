@@ -1,5 +1,5 @@
 # Lifebuoy 
-菜鸟生存指南  (引到初入职场的同学了解常用的技术工具和工作方式)
+菜鸟生存指南  (引到初入职场的同学了解常用的开发工具和技术点)
 
 以下内容如果能在大学期间掌握更好，希望下面的一些小建议能帮助到你。
 
@@ -115,6 +115,8 @@ gc日志永远都是我们排查gc问题最好的工具，所以强烈建议大�
 * Tomcat 
 Tomcat 进阶 https://www.ntu.edu.sg/home/ehchua/programming/howto/Tomcat_More.html
 
+* [面向对象三大特征、五大原则](https://blog.csdn.net/jiyiqinlovexx/article/details/46593053)
+
 ## MySQL 数据库相关
 
 * [MySQL各种不同语句执行落锁的情况](https://dev.mysql.com/doc/refman/5.7/en/innodb-locks-set.html)
@@ -127,7 +129,9 @@ Tomcat 进阶 https://www.ntu.edu.sg/home/ehchua/programming/howto/Tomcat_More.h
 
 * [实际工作中如何理解、运用数据库范式](http://kimi.it/418.html)
 
-* [关于 mysql int（X）中X的理解](http://kimi.it/175.html)
+* [关于 mysql int(X)中X的理解](http://kimi.it/175.html)
+
+* JAVA 中对象都是有符号的，因此建议所有MySQL字段都声明为有符号的，特别是BigInt类型的数据库字段，否则会出现BigInt会无法映射到long类型而抛异常。
 
 ## 前端开发
 * [JS 秘密花园](http://bonsaiden.github.io/JavaScript-Garden/zh/#object.forinloop)
@@ -155,4 +159,4 @@ https://developers.google.com/web/tools/chrome-devtools/)
 
 ![images](/src/images/img_0179.jpg)
 
-TODO 未完待续 : ) 2018.07.18 updated
+TODO 未完待续 : ) 2018.08.04 updated
