@@ -117,6 +117,8 @@ Tomcat 进阶 https://www.ntu.edu.sg/home/ehchua/programming/howto/Tomcat_More.h
 
 * [面向对象三大特征、五大原则](https://blog.csdn.net/jiyiqinlovexx/article/details/46593053)
 
+* [技术文档编写规范](https://github.com/ruanyf/document-style-guide)
+
 ## MySQL 数据库相关
 
 * [MySQL各种不同语句执行落锁的情况](https://dev.mysql.com/doc/refman/5.7/en/innodb-locks-set.html)
@@ -131,7 +133,13 @@ Tomcat 进阶 https://www.ntu.edu.sg/home/ehchua/programming/howto/Tomcat_More.h
 
 * [关于 mysql int(X)中X的理解](http://kimi.it/175.html)
 
-* JAVA 中对象都是有符号的，因此建议所有MySQL字段都声明为有符号的，特别是BigInt类型的数据库字段，否则会出现BigInt会无法映射到long类型而抛异常。
+* [淘宝数据库主备实践](http://mysql.taobao.org/monthly/2018/06/03/)
+
+* [关系型数据库如何工作的](https://www.kancloud.cn/devbean/how-databases-work/145503)
+
+* [Isolaion 隔离性](https://en.wikipedia.org/wiki/Isolation_(database_systems))
+
+* JAVA 中数值对象都是有符号的，因此建议所有MySQL字段都声明为有符号的，特别是BigInt类型的数据库字段，否则会出现BigInt会无法映射到long类型而抛异常。
 
 ## 前端开发
 * [JS 秘密花园](http://bonsaiden.github.io/JavaScript-Garden/zh/#object.forinloop)
@@ -151,7 +159,7 @@ https://developers.google.com/web/tools/chrome-devtools/)
 
 学会管理好自己的工作站，不管是windows、Linux还是Mac，目录文件夹的分布和命名清晰合理是相当重要的，会对工作效率提升多很。磁盘的合理利用，比方说是不是C盘就被撑爆了。建议合理的做软件分类，开发软件、办公软件、开发代码、会议文档等等，按照特定属性属性特征，归纳放置，不要使用`文件夹1`、`文件夹2`类似的命令方式，这是非常糟糕的，就像编码变量名命名一样，好的程序肯定少不了一个直观表意的变量名，除了你其他人也应该能很快速的理解你的思路，否则过了一段时间你也会弄混的。
 
-### 关于程序性能与开发效率的平衡
+## 关于程序性能与开发效率的平衡
 
 > It is always a good practice first to make your code right, and then make it fast. Even then, pursue optimization only if your performance measurements and requirements tell you that you must, and if those same measurements tell you that your optimizations actually made a difference under realistic conditions.
 
