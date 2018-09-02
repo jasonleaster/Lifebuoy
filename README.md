@@ -91,14 +91,13 @@ Wireshark 网络抓包分析利器
 
 * [了解常见的HTTP响应状态码快速定位问题](https://zh.wikipedia.org/wiki/HTTP%E7%8A%B6%E6%80%81%E7%A0%81)
 
-* -Xmx 参数指明jvm运行时动态申请的最大堆内存，合理的规划部署机器确保对应的java进程能够用到足够的内存资源，Xmx仅是声明式的参数，而非抢占式的。  
-gc日志永远都是我们排查gc问题最好的工具，所以强烈建议大家在线上配置-XX:+PrintGCDetails -Xloggc:/data/logs/gc.log -verbose:gc -XX:+PrintGCDateStamps
-
 * [JAVA 常见问题排查方法](https://github.com/fujohnwang/wonderful-slides/blob/master/Java%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5%5B%E6%AF%95%E7%8E%84%5D1397440786.pdf)
 
 * [内存泄露的例子了解一下](https://gist.github.com/djangofan/2713839)
 
 * 关于线程池队列的选择 http://hellojava.info/?p=13
+
+* 完成功能开发后，及时通过抽取函数、引入模板方法设计模式等方法消除重复代码，提高代码可读性和可维护性
 
 * 数据库分页查询Tips
 分页查询是个常用的功能，对于MySQL需要join很多表的情况，首先尝试优化SQL，并创建相应的索引如果实在还是不行，那就去将原来A、B、C、D、E、F等多个表join的情况先做”小范围的分页，再去join“，比方说分页的关键在于A B两个表，我们可以先将ABjoin的结果分页，再去做剩下表的join，”过滤核心数据，再做数据查询，减少数据查询的规模“。  
@@ -112,12 +111,36 @@ gc日志永远都是我们排查gc问题最好的工具，所以强烈建议大�
 将mapper.java接口的方法输入参数类型和mapper.xml中statement的parameterType保持一致  
 将mapper.java接口的方法输出 结果类型和mapper.xml中statement的resultType保持一致  
 
-* Tomcat 
-Tomcat 进阶 https://www.ntu.edu.sg/home/ehchua/programming/howto/Tomcat_More.html
+* [Tomcat 进阶](https://www.ntu.edu.sg/home/ehchua/programming/howto/Tomcat_More.html)
 
 * [面向对象三大特征、五大原则](https://blog.csdn.net/jiyiqinlovexx/article/details/46593053)
 
 * [技术文档编写规范](https://github.com/ruanyf/document-style-guide)
+
+## JVM GC 相关
+
+针对java的启动参数 -Xmx 参数指明jvm运行时动态申请的最大堆内存，合理的规划部署机器确保对应的java进程能够用到足够的内存资源，Xmx仅是声明式的参数，而非抢占式的。  
+gc日志永远都是我们排查gc问题最好的工具，所以强烈建议大家在线上配置-XX:+PrintGCDetails -Xloggc:/data/logs/gc.log -verbose:gc -XX:+PrintGCDateStamps
+
+[美团关于JVMGC调优的经验](https://tech.meituan.com/jvm_optimize.html)
+
+名称: GC前内存 -> GC后内存 （该区域内存总数）
+
+![images](http://ww1.sinaimg.cn/large/6c8effc1tw1dmc55axrbsj.jpg)
+
+![images](https://dzone.com/storage/temp/1910577-anatomy-gc-log-3.png)
+
+GC相关的关键性启动参数: -verbose:gc -XX:+PrintGCDetails -XX:+PrintGCDateStamps
+
+Java GC 行动指南 
+* [Java8 GC tuning](https://docs.oracle.com/javase/8/docs/technotes/guides/vm/gctuning/)
+* [Oracle GC 相关文档](http://www.oracle.com/webfolder/technetwork/tutorials/obe/java/gc01/index.html)
+
+理解 GC日志信息
+[Understanding Garbage Collection logs](https://plumbr.io/blog/garbage-collection/understanding-garbage-collection-logs)
+[GC 日志理解 来自 Dzone](https://dzone.com/articles/understanding-garbage-collection-log)
+
+想深入的研究java，Oracle的文档是少不了的。
 
 ## MySQL 数据库相关
 
@@ -149,6 +172,8 @@ SELECT * FROM INFORMATION_SCHEMA.INNODB_LOCK_WAITS;
 
 
 ### 大数据相关
+
+* [TDDL 分布式数据库中间件](http://jm.taobao.org/2017/01/19/20170119/)
 
 * Hive
 
