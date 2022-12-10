@@ -170,6 +170,8 @@ SELECT * FROM INFORMATION_SCHEMA.INNODB_LOCKS;
 SELECT * FROM INFORMATION_SCHEMA.INNODB_LOCK_WAITS;
 ```
 
+### 微服务架构
+微服务 “DNS”（Dubbo+Nacos+Spring-cloud- alibba/Sentinel/Seata）
 
 ### 大数据相关
 
