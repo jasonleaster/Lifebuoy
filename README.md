@@ -191,6 +191,11 @@ https://developers.google.com/web/tools/chrome-devtools/)
 * [跨域问题分析](https://amyfoxfn.github.io/amy-blog/)
 * [fouber 的博客](https://github.com/fouber/blog)
 
+## 方法论
+* 5W1H 
+* MECE 不重不漏原则
+* PDCA 
+
 ## 管理好你的工作站
 
 如果你的日常开发机器都一片混乱，想必你的开发效率和质量都很难得到保障。
